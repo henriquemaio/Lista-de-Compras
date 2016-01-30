@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Compras</title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css" media="screen,projection" />
+
+    <link href="assets/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav>
+        <div id="navtest" class="nav-wrapper">
+            <a href="#" class="brand-logo center"><i class="fa fa-shopping-cart"></i> Compras</a>
+        </div>
+    </nav>
+
+    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+        <a class="waves-effect waves-light btn-floating btn-large red modal-trigger" href="#modal1"><i class="large material-icons">add</i></a>
+    </div>
+    
+    <div id="bigWrapper" class="input_fields_wrap">
+        
+        
+    </div>
+    <div id="totalWrapper">
+        
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <form name="input" action="" method="get">
+                <input id="itemName" type="text" name="Produto" value="" placeholder="Nome do produto" size="20">
+                <div class="modal-footer">
+                    <button id="addItem" class=" modal-action modal-close waves-effect waves-green btn-flat" type="button">Adicionar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <form name="input" action="" method="get">
+                <input id="itemPrice" type="number" name="Price" pattern="^\d+(\.|\,)\d{2}$" value="" placeholder="Preço do produto" size="20">
+                <div class="modal-footer">
+                    <button id="addPrice" class=" modal-action modal-close waves-effect waves-green btn-flat" type="button">Adicionar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/scripts.js"></script>
+</body>
+
+</html>

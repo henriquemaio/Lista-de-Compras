@@ -1,0 +1,60 @@
+body, html {
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    background-color: #FF5722;
+}
+
+.input_fields_wrap {
+    width: 100%;
+}
+
+.price {
+    float: right;
+}
+
+.item {
+    
+    height: 50px;
+}
+
+.item-component {
+    width: 100%;
+    padding: 0px 5%;
+}
+
+label {
+    color: white;
+}
+
+body {
+    background-color: rgb(244, 67, 54);
+}
+
+[type="checkbox"]+label:before {
+     border: 2px solid #FFFFFF;   
+}
+
+[type="checkbox"]:checked+label:before {
+        border-right: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+label.radio-inline, label.checkbox-inline, label.radio, label.checkbox { margin-right:2%; cursor:pointer; font-weight:400; padding:10px 10px 10px 30px; background-color:#dcdfd4; margin-bottom:10px!important } label.radio-inline.checked, label.checkbox-inline.checked, label.radio.checked, label.checkbox.checked { background-color:#266c8e; color:#fff!important; text-shadow:#000 1px 1px 2px!important }
+
+.price {
+    color: white;
+    display: none;
+}
+
+#totalWrapper {
+    display: none;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
