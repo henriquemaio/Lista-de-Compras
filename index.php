@@ -10,8 +10,8 @@ $db_pass = getenv('DB_PASS');
 
 
 
-echo("<script>console.log('PHP: ".json_encode($teste)."');</script>");
-echo("<script>console.log('PHP: ".json_encode($teste)."');</script>");
+echo("<script>console.log('PHPOI: ".json_encode($teste)."');</script>");
+echo("<script>console.log('PHPOI: ".json_encode($teste)."');</script>");
 
 sleep(10);
 
