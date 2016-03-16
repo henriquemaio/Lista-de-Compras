@@ -1,6 +1,7 @@
 <?php
+        echo("<script>console.log('Puta bruxaria do cão');</script>");
 //Estão definidos nas variaveis de ambiente
-        
+        print 'entrei aqui no php naoseionome';
         $host = getenv('DB_HOST'); 
         $user = getenv('DB_USER'); 
         $pass = getenv('DB_PASS'); 
@@ -17,7 +18,7 @@
         $con_string = 'host='.$host.' port=5432 dbname='.$db.' user='.$user.' password='.$pass;
         //"host=$host port=5432 dbname=$db user=$user password=$pass"
         echo $con_string;
-        echo 'entrei aqui no php naoseionome';
+        
         return $con = pg_connect($con_string)
             or die("Could not connect to server\n");
 
