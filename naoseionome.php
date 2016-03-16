@@ -7,18 +7,11 @@
         $db = getenv('DB_NAME'); 
 
 
-         
-
-        if(isset($_POST['data'])) {
-            //echo("<script>console.log('Puta bruxaria do cão');</script>");
-            $data = $_POST['data'];
-            echo json_encode(array('return' => 'essa vai'));
-        }
         
         if(isset($_POST['nome'])) {
             //echo("<script>console.log('Puta bruxaria do cão');</script>");
             $data = $_POST['nome'];
-            echo json_encode(array('return' => 'essa vai'));
+            echo json_encode(array('return' => 'Acertou, campeão!'));
         }
         
         $con_string = 'host='.$host.' port=5432 dbname='.$db.' user='.$user.' password='.$pass;
