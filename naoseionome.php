@@ -17,7 +17,7 @@
             $stat = pg_connection_status($con);
             $query_string = 'INSERT INTO precos (item, preco) VALUES ("'.$data.'", null);';
             $result = pg_query($con,$query_string);
-            echo json_encode(array('return' => $data, 'status_db' => $stat, 'result' => $result, 'con' => $con, 'con_string' => $con_string));
+            echo json_encode(array('return' => $data, 'status_db' => $stat, 'result' => $result, 'query' => $query_string, 'con_string' => $con_string));
         }
         
         
