@@ -1,6 +1,5 @@
 <?php
-        echo("<script>console.log('Puta bruxaria do cão');</script>");
-//Estão definidos nas variaveis de ambiente
+        //Estão definidos nas variaveis de ambiente
         print 'entrei aqui no php naoseionome';
         $host = getenv('DB_HOST'); 
         $user = getenv('DB_USER'); 
@@ -10,8 +9,9 @@
 
          
 
-        if(isset($_POST['nome'])) {
-            $data = $_POST['nome'];
+        if(isset($_POST['data'])) {
+            echo("<script>console.log('Puta bruxaria do cão');</script>");
+            $data = $_POST['data'];
             echo json_encode(array('return' => $data));
         }
         

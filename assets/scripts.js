@@ -96,6 +96,7 @@ function adicionarItem() {
     
     //Enviar o dado para o Php
     $.post("../naoseionome.php",data ,function (result){
+        console.log(data);
         console.log(result);
     },"json");
 
