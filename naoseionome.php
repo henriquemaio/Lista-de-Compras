@@ -15,8 +15,8 @@
             //echo("<script>console.log('Puta bruxaria do cão');</script>");
             $data = $_POST['nome'];
             $stat = pg_connection_status($con);
-            
-            $result = pg_query_params($con, 'INSERT INTO preco ($1);', array($data));
+            $query_string = 'INSERT INTO preco (item, preco) VALUES (null,'.$data.');';
+            $result = pg_query($con,$query_string);
             echo json_encode(array('return' => $data, 'status_db' => $stat, $result => result));
         }
         
