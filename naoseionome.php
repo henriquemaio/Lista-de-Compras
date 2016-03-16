@@ -7,14 +7,15 @@
         $db = getenv('DB_NAME'); 
 
 
-        $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
-            or die ("Could not connect to server\n"); 
+         
 
         if(isset($_POST['data'])) {
             $data = $_POST['data'];
-            echo json_encode(array('return' => $data)); //ESTA aqui
+            echo json_encode(array('return' => $data));
         }
         
+        return $con = pg_connect("host=$host port=5432 dbname=$db user=$user password=$pass")
+            or die("Could not connect to server\n");
 
 
 >
