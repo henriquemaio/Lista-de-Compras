@@ -14,7 +14,8 @@
         if(isset($_POST['nome'])) {
             //echo("<script>console.log('Puta bruxaria do cão');</script>");
             $data = $_POST['nome'];
-            echo json_encode(array('return' => 'Acertou, campeão!'));
+            $stat = pg_connection_status($con);
+            echo json_encode(array('return' => 'Acertou, campeão!', 'status_db' => $stat));
         }
         
         
