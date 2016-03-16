@@ -1,4 +1,4 @@
-<? php
+<?php
 //Estão definidos nas variaveis de ambiente
         
         $host = getenv('DB_HOST'); 
@@ -16,6 +16,8 @@
         
         $con_string = 'host='.$host.' port=5432 dbname='.$db.' user='.$user.' password='.$pass;
         //"host=$host port=5432 dbname=$db user=$user password=$pass"
+        echo $con_string;
+        echo 'entrei aqui no php naoseionome';
         return $con = pg_connect($con_string)
             or die("Could not connect to server\n");
 
