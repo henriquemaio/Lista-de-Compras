@@ -85,12 +85,19 @@ function adicionarItem() {
 
     var label = document.createElement("label");
     label.setAttribute("for", document.getElementById("itemName").value);
-    label.innerHTML = document.getElementById("itemName").value;
+    label.innerHTML = document.getElementById("itemName").value; 
 
     var price = document.createElement("div");
     price.className = "price";
     price.innerHTML = "0";
-
+    
+    var data = {};
+    data.nome  =  document.getElementById("itemName").value; //Nome do item que sera adicionado ao banco
+    
+    //Enviar o dado para o Php
+    $.post("../naoseionome.php",data ,function (result){
+        console.log(result);
+    },"json");
 
     item.appendChild(checkbox);
     item.appendChild(label);

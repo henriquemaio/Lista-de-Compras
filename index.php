@@ -79,22 +79,6 @@
     <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/scripts.js"></script>
     
-    <?php
-    
-        $host = getenv('DB_HOST'); 
-        $user = getenv('DB_USER'); 
-        $pass = getenv('DB_PASS'); 
-        $db = getenv('DB_NAME'); 
-
-
-        $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
-            or die ("Could not connect to server\n"); 
-
-        $teste = getenv('TEST');
-
-        echo("<script>console.log('PHPoi2: ".json_encode($teste)."');</script>");
-
-    ?>
     
 </body>
 
