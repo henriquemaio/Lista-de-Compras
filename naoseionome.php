@@ -9,12 +9,14 @@
 
          
 
-        if(isset($_POST['data'])) {
-            $data = $_POST['data'];
+        if(isset($_POST['nome'])) {
+            $data = $_POST['nome'];
             echo json_encode(array('return' => $data));
         }
         
-        return $con = pg_connect("host=$host port=5432 dbname=$db user=$user password=$pass")
+        $con_string = 'host='.$host.' port=5432 dbname='.$db.' user='.$user.' password='.$pass;
+        //"host=$host port=5432 dbname=$db user=$user password=$pass"
+        return $con = pg_connect($con_string)
             or die("Could not connect to server\n");
 
 
