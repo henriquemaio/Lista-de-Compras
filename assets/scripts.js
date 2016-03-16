@@ -93,10 +93,10 @@ function adicionarItem() {
     
     var data = {};
     data.nome  =  document.getElementById("itemName").value; //Nome do item que sera adicionado ao banco
-    
+    console.log(data);
     //Enviar o dado para o Php
     $.post("../naoseionome.php",data ,function (result){
-        console.log(data);
+        
         console.log(result);
     },"json");
 
